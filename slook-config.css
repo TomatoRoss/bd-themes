@@ -1,0 +1,317 @@
+/*  ------------------------------------------
+           SLOOK REMASTERED (POWERCORD)
+                      v3.1
+                - leeprky#2063 -
+    ------------------------------------------  */
+
+/* SLOOK Source Code */
+@import url(https://leeprky.github.io/themes/slook/imports.css);
+@import "https://leeprky.github.io/themes/slook/source/client/powercord.css";
+
+/* Optional Imports */
+@import url(https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css); /* */
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+
+/*  ----------------------------
+         GLASSCORD SUPPORT
+    ----------------------------  */
+
+/*
+@import "https://leeprky.github.io/themes/slook/source/glasscord.css";
+.theme-dark {
+  --glasscord-win-blur: blurbehind;
+  --glasscord-linux-blur: true;
+  --glasscord-macos-vibrancy: fullscreen-ui;
+  --glasscord-blur-corner-radius: 20px;
+  --background-accent: var(--glasscord-accent); 
+  --background-floating: var(--glasscord-floating); 
+  
+  --glasscord-primary: #24262bb8 !important;
+  --glasscord-secondary: #1d1f220 !important;
+  --glasscord-secondary-alt: #1d1f2283 !important;
+  --glasscord-accent: var(--alt-color2) !important;
+  --glasscord-tertiary: #2f323674 !important;
+  --glasscord-floating: #18191ce5 !important;
+  --glasscord-backdrop: 0.55 !important;
+}
+
+.theme-light {
+  --glasscord-win-blur: blurbehind;
+  --glasscord-linux-blur: true;
+  --glasscord-macos-vibrancy: fullscreen-ui;
+  --glasscord-blur-corner-radius: 20px;
+  --background-accent: var(--glasscord-accent); 
+  --background-floating: var(--glasscord-floating); 
+  
+  --glasscord-primary: #cad7e0b1 !important;
+  --glasscord-secondary: #dce5eca8 !important;
+  --glasscord-secondary-alt: #dce5ec9a !important;
+  --glasscord-accent: var(--alt-color2) !important;
+  --glasscord-tertiary: #eceff388 !important;
+  --glasscord-floating: #bbc8d198 !important;
+  --glasscord-backdrop: 0.55 !important;
+}
+/* */
+
+/*  ----------------------------
+       GLASSCORD SUPPORT END
+    ----------------------------  */
+
+/*  ------------------------------------------
+         SLOOK Customisable Configuration
+                    v3.1
+               -leeprky#2063-
+    ------------------------------------------  */
+
+  :root {
+    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  
+    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  
+    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  
+    --rs-online-color: #43b581; /* Colour for online status */
+    --rs-idle-color: #faa61a; /* Colour for idle status */
+    --rs-dnd-color: #f04747; /* Colour for dnd status */
+    --rs-offline-color: #636b75; /* Colour for offline status */
+    --rs-streaming-color: #643da7; /* Colour for streaming status */
+    --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  
+    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  }
+
+.theme-dark {
+
+  /* Main Colours - Try Keep These The Same */
+  --main-colour: 40, 86, 81; /* RGB ONLY */
+  --main-colour2: #285651; /* HEX ONLY */
+  --main-colour3: 173; /* HSL ONLY */
+
+  /* Green Colours */
+  --green-color: var(--alt-color2); /* HEX ONLY */
+  --green-color2: var(--alt-color); /* RGB ONLY */
+  --green-bar-on: rgba(var(--alt-color), 0.3); /* RGBA ONLY */
+  --green-bar-bg: var(--green-color); /* RGB ONLY */
+  --green-slider-on: var(--green-color); /* RGB ONLY */
+  --green-slider-off: rgba(var(--alt-color), 0.4); /* RGBA ONLY */
+  --green-slider-dot: #fff;
+
+  /* Status/Other Things Colours */
+
+  --watermark-text: "SLOOK";
+  --watermark-text-top: 1.2px;
+  --watermark-text-left: -5.79rem;
+  --watermark-gradient: 200deg, rgb(24, 189, 46), rgb(255, 255, 255) !important;
+
+  /* Header Colours */
+  --headers: #EAE1DF; /* */
+  --headers-secondary: #9fa1a3;
+
+  --chatbox-colour: var(--background-secondary);
+  --mentioned: rgba(var(--alt-color), 0.4);
+  --mentioned-hover: rgba(var(--alt-color), 0.2);
+
+  /* Text Colours */
+  --namesusernames: #FFFFFF;
+  --text: #dcddde;
+  --text-positive1: var(--green-color);
+  --muted: #70757e;
+  --links: var(--alt-color2);
+  
+  /* Interative Buttons */
+  --button-interactive: #bebebe;
+  --button-interactive-hover: #dcddde;
+  --button-interactive-active: #e7dede;
+  --button-interactive-muted: #313233;
+
+  /* Backgrounds */
+  --main-background: #24262b;
+  --main-background-alternative: #24262b;
+  --secondary-background: #1d1f22;
+  --secondary-background-alternative: #1d1f22;
+  --tertiary: #2f3236;
+  --accent: var(--alt-color2);
+  --floating: #18191c;
+
+  /* Hovering Colours */
+  --main-hover: rgba(var(--alt-color), 0.2);
+  --main-hover-active: rgba(var(--alt-color), 0.8);
+  --main-hover-selected: rgba(var(--alt-color), 0.5); 
+  --main-hover-accent: rgba(var(--alt-color), 0.1); 
+
+  /* Infos */
+  --info-warning: var(--alt-color2);--help-warning: var(--alt-color2); --help-info: var(--alt-color2);--radio-group-dot: var(--alt-color);
+
+  /* Drop Shadow */
+  --shadow-stroke:0 0 0 1px rgba(22, 24, 26, 0.329);
+  --shadow-low: 0 1px 0 rgba(18, 20, 36, 0.767),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+  --shadow-medium: 0 4px 4px rgba(0,0,0,0.16);
+  --shadow-high: 0 8px 16px rgba(0,0,0,0.24);
+
+  /* Scollbars */
+  --scrollbars: none; /* Flex To See Scrollbars / None For None */
+  --scrollbar-small: 28554e;
+  --scrollbar-small-track: transparent;
+  --scrollbar-large-thumb: 28554e;
+  --scrollbar-large-track: 28554e;
+  --scrollbar-small-scrollbar-color: 28554e;
+  --scrollbar-small-scrollbar-color-track: transparent;
+
+
+/* Box Shadow On Floating Elements Colours */
+
+  /* Button Gradients */
+  --default-gradient: 315deg, rgba(var(--alt-color), 0.6) 0%, rgba(var(--alt-color), 0.8) 74%;--special-gradient: 315deg, rgba(var(--alt-color), 0.1) 0%, #c987b8 74%;--red-gradient: 315deg, #AA3738 0%, #F04747 74%;--red-hsl: hsl(359, 63%, 53%);--yellow-gradient: 315deg, #c29b1b 0%, #ffa640 74%;--yellow-hsl: hsl(46, 72%, 52%);--green-gradient: 315deg, #507a73 0%, #4b7c72  74%;--grey-gradient: 315deg, rgba(var(--alt-color), 0.6) 0%, rgba(var(--alt-color), 0.8) 74%;--white-gradient: 315deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.342) 74%;
+  --font-normal: 500;--font-hover: bold;--font-size-hover: 15px;--hover-transition: 0.1s linear;--transform-normal: scale(1);--hover-transform: scale(1.15);--setting-hover-transform: scale(1.025);--button-hover-transform: scale(1.03);
+}
+
+
+.theme-light {
+
+  /* Main Colours - Try Keep These The Same */
+  --main-colour: 83, 182, 167; /* RGB ONLY */
+  --main-colour2: #53b6a7; /* HEX ONLY */
+  --main-colour3: 171; /* HSL ONLY */
+
+  /* Green Colours */
+  --green-color: var(--alt-color2); /* HEX ONLY */
+  --green-color2: var(--alt-color); /* RGB ONLY */
+  --green-bar-on: rgba(var(--alt-color), 0.3); /* RGBA ONLY */
+  --green-bar-bg: var(--green-color); /* RGB ONLY */
+  --green-slider-on: var(--green-color); /* RGB ONLY */
+  --green-slider-off: rgba(var(--alt-color), 0.4); /* RGBA ONLY */
+  --green-slider-dot: #fff;
+
+  /* Status/Other Things Colours */
+  --watermark-text: "SLOOK";
+  --watermark-version: "";
+  --watermark-text-top: 6px;
+  --watermark-text-left: 0rem;
+  --watermark-gradient: 200deg, rgb(24, 189, 46), rgb(0, 0, 0) !important;
+
+  /* Header Colours */
+  --headers: #0f0f0e; /* */
+  --headers-secondary: 2b2d2e;
+
+  --chatbox-colour: var(--background-secondary);
+  --mentioned: rgba(var(--alt-color), 0.4);
+  --mentioned-hover: rgba(var(--alt-color), 0.2);
+
+  /* Text Colours */
+  --namesusernames: #24222;
+  --text: #111010;
+  --text-positive1: var(--green-color);
+  --muted: var(--alt-color2);
+  --links: var(--alt-color2);
+  
+  /* Interative Buttons */
+  --button-interactive: #666565;
+  --button-interactive-hover: var(--main-colour2);
+  --button-interactive-active: #252525;
+  --button-interactive-muted: #999b9c;
+
+  /* Backgrounds */
+  --main-background: #cad7e0;
+  --main-background-alternative: #cad7e0;
+  --secondary-background: #dce5ec;
+  --secondary-background-alternative: #dce5ec;
+  --tertiary: #eceff3;
+  --accent: var(--alt-color2);
+  --floating: #bbc8d1;
+
+  /* Hovering Colours */
+  --main-hover: rgba(var(--alt-color), 0.2);
+  --main-hover-active: rgba(var(--alt-color), 0.8);
+  --main-hover-selected: rgba(var(--alt-color), 0.5); 
+  --main-hover-accent: rgba(var(--alt-color), 0.1); 
+
+  /* Infos */
+  --info-warning: var(--alt-color2);--help-warning: var(--alt-color2); --help-info: var(--alt-color2);--radio-group-dot: var(--alt-color);
+
+  /* Drop Shadow */
+  --shadow-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+  --shadow-low: 0 1px 0 rgba(18, 20, 36, 0.767),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+  --shadow-medium: 0 4px 4px rgba(0,0,0,0.16);
+  --shadow-high: 0 8px 16px rgba(0,0,0,0.24);
+
+  /* Scollbars */
+  --scrollbars: none; /* Flex To See Scrollbars / None For None */
+  --scrollbar-small: 28554e;
+  --scrollbar-small-track: transparent;
+  --scrollbar-large-thumb: 28554e;
+  --scrollbar-large-track: 28554e;
+  --scrollbar-small-scrollbar-color: 28554e;
+  --scrollbar-small-scrollbar-color-track: transparent;
+
+  /* Button Gradients */
+  --default-gradient: 315deg, rgba(var(--alt-color), 0.6) 0%, rgba(var(--alt-color), 0.8) 74%;--special-gradient: 315deg, rgba(var(--alt-color), 0.1) 0%, #c987b8 74%;--red-gradient: 315deg, #AA3738 0%, #F04747 74%;--red-hsl: hsl(359, 63%, 53%);--yellow-gradient: 315deg, #c29b1b 0%, #ffa640 74%;--yellow-hsl: hsl(46, 72%, 52%);--green-gradient: 315deg, #507a73 0%, #4b7c72  74%;--grey-gradient: 315deg, rgba(var(--alt-color), 0.6) 0%, rgba(var(--alt-color), 0.8) 74%;--white-gradient: 315deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.342) 74%;
+  --font-normal: 500;--font-hover: bold;--font-size-hover: 15px;--hover-transition: 0.1s linear;--transform-normal: scale(1);--hover-transform: scale(1.15);--setting-hover-transform: scale(1.025);--button-hover-transform: scale(1.03);
+}
+
+
+/*  ----------------------------------------------------
+                  Optional Features
+        Add A "/*" On The Lines Below The Comments
+                  To Disable Them
+    ----------------------------------------------------  */
+
+    /* SlookChatBox OPTIONAL*/
+/* Name */
+.username-1A8OIy {
+  font-size: 1.15rem;
+  line-height: 2.375rem;
+  color: var(--header-primary);
+  display: inline;
+  margin-bottom:  15px;
+  margin-left: 0px;  /* - DISCORD USERNAME FONT
+  font-family:'Discord'; 
+  /* /* */
+}
+.cozy-VmLDNB .timestamp-p1Df1m {
+  font-size: 0.65rem;
+  height: 1.975rem;
+  color: #b6b9b4;
+  vertical-align:-webkit-baseline-middle; 
+  font-family: 'Discord';  /* - DISCORD USERNAME FONT */
+}
+.message-2CShn3 .avatar-2e8lTP {
+  margin-bottom: -10px;
+  width: 50px;
+  height: 50px;
+  left: 10px
+}
+.message-2CShn3 .contents-2MsGLg .avatar-2e8lTP {
+  top: 15px !important;
+}
+.cozy-VmLDNB .messageContent-2t3eCI {
+  margin-left: -68px;
+  padding-left: 72px;
+  margin-top: -5px;
+}
+/* Compact Support */
+.compact-2Nkcau .contents-2MsGLg {
+  height: 50px;
+}
+.compact-2Nkcau .timestamp-p1Df1m, .cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+  display: none;
+}
+.messagesWrapper-RpOMA3, .scrollerContent-2SW0kQ {
+  margin-left: 10px
+}
+
+/* --- */
+/* Optionals End */
+/* ----- */
+
+:root {--version: "v3.1.0"; --build: "400"; --outdated_slook-400: none !important}
+
+/*  ----------------------------------------------------
+         ANYTHING ELSE YOU WANT TO ADD GOES BELOW
+               THIS IS FOR DEBUGGING ETC
+                    v3.1 (Slook)
+    ----------------------------------------------------  */
